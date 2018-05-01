@@ -11,8 +11,10 @@
     "build:editor": "cd src/editor && yarn && npm run build && cd -",
     "build:typescript": "tsc",
     "copy:graphql": "cp src/*.graphql dist/",
-    "copy:editor": "mkdir -p dist/editor && cp src/editor/*.{html,js,css,svg} dist/editor",
-    "build:all": "npm run build:editor && npm run build:typescript && npm run copy:graphql && npm run copy:editor"
+    "copy:editor": "mkdir -p  dist/editor && cp src/editor/*.{html,js,css,svg} dist/editor",
+    "build:all": "npm run build:editor && npm run build:typescript && npm run copy:graphql && npm run copy:editor",
+    "copy-win:editor": "mkdirp  dist/editor && cp src/editor/*.{html,js,css,svg} dist/editor",
+    "build-win:all": "npm run build:editor && npm run build:typescript && npm run copy:graphql && npm run copy-win:editor"
   },
   "repository": {
     "type": "git",
@@ -34,7 +36,7 @@
     "@types/lodash": "4.14.108",
     "@types/yargs": "11.0.0",
     "nodemon": "1.17.3",
-    "ts-node": "6.0.0",
+    "ts-node": "^6.0.0",
     "typescript": "2.8.3"
   },
   "dependencies": {
@@ -45,7 +47,7 @@
     "express": "4.16.3",
     "express-graphql": "github:apis-guru/express-graphql#rootValue_dist",
     "faker": "4.1.0",
-    "graphql": "github:apis-guru/graphql-js#directives-fork-dist",
+    "graphql": "",
     "lodash": "4.17.10",
     "moment": "2.22.1",
     "node-fetch": "2.1.2",

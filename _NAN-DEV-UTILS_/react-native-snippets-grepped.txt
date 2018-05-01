@@ -1,0 +1,29 @@
+NickArthur@LAPTOP-PNDFN7JR MINGW64 ~/.vscode/extensions
+$ grep \"prefix ./EQuimper.react-native-react-redux-snippets-for-es6-es7-version-standard-1.0.3/snippets/sn
+ippets.json
+
+
+
+NickArthur@LAPTOP-PNDFN7JR MINGW64 ~/.vscode/extensions
+
+$ ls |grep react-native
+
+grep \"prefix ~/.vscode/extensions/bierner.react-native-ios-pack-0.0.3/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/ejoy.ejoy-react-native-snippets-0.0.3/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/EQuimper.react-native-react-redux-1.8.0/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/EQuimper.react-native-react-redux-snippets-for-es6-es7-version-standard-1.0.3/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/Jianglun.react-native-redux-snippet-1.0.3/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/jundat95.react-native-snippet-0.4.2/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/lucasbento.react-native-actions-1.0.1/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/milobo.react-native-styled-component-snippets-1.0.1/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/Orta.vscode-react-native-storybooks-2.5.1/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/santosh.react-native-snippet-0.6.0/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/tiaanduplessis.react-native-simple-snippets-1.0.0/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/ueno.react-native-code-styles-0.0.1/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/vsmobile.vscode-react-native-0.6.9/snippets/snippets.json
+grep \"prefix ~/.vscode/extensions/zetta.react-native-vscode-extensionpack-0.0.1/snippets/snippets.json
+
+
+NickArthur@LAPTOP-PNDFN7JR MINGW64 ~/.vscode/extensions
+$ grep \"prefix ./EQuimper.react-native-react-redux-snippets-for-es6-es7-version-standard-1.0.3/snippets/sn
+ippets.json
