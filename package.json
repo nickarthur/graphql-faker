@@ -5,10 +5,12 @@
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "scripts": {
+    "cd-editor": "cd src/editor && pwd && cd ../.. && pwd",
+    "cd-back": "cd -",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e ts --exec 'ts-node src/index.ts'",
-    "debug": "ts-node --inspect --compilerOptions '{\"inlineSources\":true}' src/index.ts",
-    "build:editor": "cd src/editor && yarn && npm run build && cd -",
+    "start": "nodemon -e ts --exec \"ts-node/register src/index.ts\"",
+    "debug": "ts-node --inspect --compilerOptions \"{\"\"inlineSources\"\":true}\" src/index.ts",
+    "build:editor": "cd src/editor && npm install && npm run build && cd ../..",
     "build:typescript": "tsc",
     "copy:graphql": "cp src/*.graphql dist/",
     "copy:editor": "mkdir -p  dist/editor && cp src/editor/*.{html,js,css,svg} dist/editor",
@@ -37,7 +39,8 @@
     "@types/yargs": "11.0.0",
     "nodemon": "1.17.3",
     "ts-node": "^6.0.0",
-    "typescript": "2.8.3"
+    "typescript": "2.8.3",
+    "yarn": "^1.6.0"
   },
   "dependencies": {
     "body-parser": "1.18.1",
@@ -47,7 +50,7 @@
     "express": "4.16.3",
     "express-graphql": "github:apis-guru/express-graphql#rootValue_dist",
     "faker": "4.1.0",
-    "graphql": "",
+    "graphql": "github:apis-guru/graphql-js#directives-fork-dist",
     "lodash": "4.17.10",
     "moment": "2.22.1",
     "node-fetch": "2.1.2",
