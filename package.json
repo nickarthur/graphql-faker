@@ -1,22 +1,28 @@
 {
   "name": "graphql-faker",
   "version": "1.7.0",
-  "description": "Mock or extend your GraphQL API with faked data. No coding required",
+  "description":
+    "Mock or extend your GraphQL API with faked data. No coding required",
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "scripts": {
     "cd-editor": "cd src/editor && pwd && cd ../.. && pwd",
     "cd-back": "cd -",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e ts --exec \"ts-node/register src/index.ts\"",
-    "debug": "ts-node --inspect --compilerOptions \"{\"\"inlineSources\"\":true}\" src/index.ts",
+    "start": "nodemon -e ts --exec \"ts-node src/index.ts\"",
+    "debug":
+      "ts-node --inspect --compilerOptions \"{\"\"inlineSources\"\":true}\" src/index.ts",
     "build:editor": "cd src/editor && npm install && npm run build && cd ../..",
     "build:typescript": "tsc",
     "copy:graphql": "cp src/*.graphql dist/",
-    "copy:editor": "mkdir -p  dist/editor && cp src/editor/*.{html,js,css,svg} dist/editor",
-    "build:all": "npm run build:editor && npm run build:typescript && npm run copy:graphql && npm run copy:editor",
-    "copy-win:editor": "mkdirp  dist/editor && cp src/editor/*.{html,js,css,svg} dist/editor",
-    "build-win:all": "npm run build:editor && npm run build:typescript && npm run copy:graphql && npm run copy-win:editor"
+    "copy:editor":
+      "mkdir -p  dist/editor && cp src/editor/*.{html,js,css,svg} dist/editor",
+    "build:all":
+      "npm run build:editor && npm run build:typescript && npm run copy:graphql && npm run copy:editor",
+    "copy-win:editor":
+      "mkdirp  dist/editor && cp src/editor/*.{html,js,css,svg} dist/editor",
+    "build-win:all":
+      "npm run build:editor && npm run build:typescript && npm run copy:graphql && npm run copy-win:editor"
   },
   "repository": {
     "type": "git",
