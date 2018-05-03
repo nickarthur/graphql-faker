@@ -9,7 +9,7 @@
     "cd-editor": "cd src/editor && pwd && cd ../.. && pwd",
     "cd-back": "cd -",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e ts --exec \"ts-node src/index.ts\"",
+    "start": "nodemon -e ts,graphql --exec \"ts-node src/index.ts\"",
     "debug":
       "ts-node --inspect --compilerOptions \"{\"\"inlineSources\"\":true}\" src/index.ts",
     "build:editor": "cd src/editor && npm install && npm run build && cd ../..",
